@@ -1,5 +1,17 @@
 ![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
 
+## ⚠️ Important Reminder for Forked Repository
+This repository is forked from the official n8n-nodes-starter. To publish packages to GitHub Packages under the `@netbasequid` organization, please ensure the following configurations:
+
+1. Update `package.json`:
+   - `name`: Follow the pattern `@netbasequid/n8n-nodes-*`
+   - `url`: Update to your repository URL
+   - `publishConfig.registry`: Configure to `https://npm.pkg.github.com`
+
+2. Publish:
+   - Use the "publish" GitHub Action to manually trigger package publishing to GitHub Packages under @netbasequid.
+   - This action is configured in `.github/workflows/publish.yml`
+
 # n8n-nodes-starter
 
 This repo contains example nodes to help you get started building your own custom integrations for [n8n](n8n.io). It includes the node linter and other dependencies.

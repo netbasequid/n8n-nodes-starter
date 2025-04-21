@@ -1,0 +1,4 @@
+# Protect company-specific files from upstream changes
+package.json merge=ours
+README.md merge=ours
+.github/** merge=ours
